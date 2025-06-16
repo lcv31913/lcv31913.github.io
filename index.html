@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Howard Zhang - Portfolio</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="logo">Howard Zhang</h1>
+				<nav>
+					<a href="#about">About</a>
+					<a href="#projects">Projects</a>
+					<a href="#experience">Experience</a>
+					<a href="#skills">Skills</a>
+					<a href="#contact">Contact</a>
+				</nav>
+			</div>
+		</header>
+
+		<section id="hero">
+			<div class="container">
+				<h2>Hello, I'm <span class="highlight">Howard Zhang</span></h2>
+				<p>Software / Firmware Engineer</p>
+			</div>
+		</section>
+
+		<section id="projects" class="section">
+			<h2 class="section-title">My Projects</h2>
+
+			<!-- swiper -->
+			<div class="swiper">
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="./static/digital_frame.jpg" alt="Project: Digital_frame" /></div>
+					<div class="swiper-slide"><img src="./static/skillstorm.jpg" alt="Project: Skillstorm" /></div>
+					<div class="swiper-slide"><img src="./static/search_court.jpg" alt="Project: Search_badminton_court" /></div>
+					<div class="swiper-slide"><img src="./static/Sampling_equipment_control_interface.jpg" alt="Project: Sampling_equipment" /></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<!-- another projects -->
+			<div class="project-cards">
+				<div class="card">
+					<video controls muted autoplay loop playsinline style="width: 100%; border-radius: 8px;">
+						<source src="./static/digital_frame_demo.mp4" type="video/mp4" />
+						Your browser does not support the video tag.
+					</video>
+					<h3>Project: Digital frame</h3>
+					<p>Developed an embedded system using ESP32 and LVGL to implement a digital photo frame, enabling users to upload images via Wi-Fi.</p>
+				</div>
+
+				<div class="card">
+					<img src="./static/skillstorm.jpg" alt="Project: Skillstorm" />
+					<h3>Project: <a href="https://apps.apple.com/tw/app/skillstorm/id6739574450" target="_blank" rel="noopener noreferrer">SkillStorm</a></h3>
+					<p>
+						Co-created a community platform that enables developers to connect, discuss, and collaborate on IT-related topics. Designed to support career changers, side projects, and problem-solving through shared expertise and
+						community-driven interaction.
+					</p>
+				</div>
+
+				<div class="card">
+					<img src="./static/search_court.jpg" alt="Project: Search badminton court" />
+					<h3>Project: <a href="https://court.directsense.tw/" target="_blank" rel="noopener noreferrer">Search badminton court</a></h3>
+					<p>A web page that integrates multiple public sport centers to search for available badminton courts.</p>
+				</div>
+
+				<div class="card">
+					<img src="./static/Sampling_equipment_control_interface.jpg" alt="Project: Sampling equipment control interface" />
+					<h3>Project: Sampling equipment control interface</h3>
+					<p>Implemented data read/write capabilities for custom equipment as part of a freelance project.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- about me -->
+		<section id="about" class="section">
+			<h2 class="section-title">About Me</h2>
+			<div class="section-content" style="text-align:left;">
+				<p>
+					Embedded software engineer with 4 years of experience in IoT and internet-connected systems. Currently developing a cloud-based radar data platform. Passionate about bridging embedded hardware with scalable internet
+					applications.
+				</p>
+			</div>
+		</section>
+
+		<!-- working experience -->
+		<section id="experience" class="section">
+			<h2 class="section-title">Experience</h2>
+			<div class="section-content">
+				<ul>
+					<li>
+						<strong><a href="https://www.taiwanarena.tech/startups-detail/Millilab/" target="_blank" rel="noopener noreferrer">Millilab Co., Ltd.</a></strong> - Firmware engineer（July 2022 - Present)
+						<ul>
+							<li>Designed radar algorithms for the ARM chip series.</li>
+							<li>Generated data through physical testing and analysis using Matlab.</li>
+							<li>Developed a simple Windows program using C#.</li>
+							<li>Developing a database system over internet to store raw data for easier testing.</li>
+							<li>Developing an internet server for over-the-air programming(OTA) updating.</li>
+							<li>Integrating and maintaining codebases effectively.</li>
+						</ul>
+					</li>
+					<li>
+						<strong><a href="https://uec-iot.com.tw/en/home-english/" target="_blank" rel="noopener noreferrer">UEC System Solutions Corporation.</a></strong> - Firmware engineer（April 2021 - March 2022)
+						<ul>
+							<li>Proficiency in Internet of Things protocols such as HTTP, MQTT, and NB-IoT.</li>
+							<li>Developing firmware for ARM and FreeRTOS.</li>
+							<li>Backend development using Python for creating user interface and database communication.</li>
+							<li>Programming in languages such as C/C++, Python, C#, Node.js, and others.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="skills" class="section">
+			<h2 class="section-title">Skills</h2>
+			<div class="section-content">
+				<ul>
+					<li>
+						<strong>Frontend</strong>
+						<ul>
+							<li>Html, Css, Vue3</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>Backend</strong>
+						<ul>
+							<li>Database, Restful API, Web crawler, Web socket, Internet protocol</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>Database</strong>
+						<ul>
+							<li>MySQL, Mongo DB</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>Embedded System</strong>
+						<ul>
+							<li>C, C++, LGVL, Linux, ARM series</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>Cloud</strong>
+						<ul>
+							<li>AWS EC2, AWS Limbda, GCP, DNS management</li>
+						</ul>
+					</li>
+
+					<li>
+						<strong>Design of Window Programming</strong>
+						<ul>
+							<li>C# winForm, C# Avalonia</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- contact -->
+		<section id="contact" class="section">
+			<h2 class="section-title">Contact</h2>
+			<div class="section-content" style="max-width:400px;align-items:left;">
+				<p>
+					<a href="mailto:lcv31913@gmail.com" target="_blank"> <i class="bi bi-envelope-fill" style="margin-right:12px; color: #000; font-size: 1.3em; vertical-align: middle;"></i>lcv31913@gmail.com </a>
+				</p>
+				<p>
+					<a href="https://www.linkedin.com/in/haohsuan-chang/" target="_blank">
+						<i class="bi bi-linkedin" style="margin-right:12px; color: #000; font-size: 1.3em; vertical-align: middle;"></i>https://www.linkedin.com/in/haohsuan-chang/
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/lcv31913" target="_blank"> <i class="bi bi-github" style="margin-right:12px; color: #000; font-size: 1.3em; vertical-align: middle;"></i>https://github.com/lcv31913 </a>
+				</p>
+			</div>
+		</section>
+
+		<footer>
+			<p>&copy; 2025 Howard Zhang</p>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			 const swiper = new Swiper('.swiper', {
+			   loop: true,
+			   autoplay: {
+			     delay: 3000,
+			   },
+			   pagination: {
+			     el: '.swiper-pagination',
+			   },
+			navigation: {
+			     nextEl: '.swiper-button-next',
+			     prevEl: '.swiper-button-prev',
+			   },
+			 });
+		</script>
+	</body>
+</html>
